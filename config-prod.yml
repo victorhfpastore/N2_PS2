@@ -1,0 +1,11 @@
+logging:
+  level: INFO
+  loggers:
+    br.aluno.mack: DEBUG
+
+database:
+  driverClass: com.mysql.cj.jdbc.Driver
+  user: root
+  password:
+  url: jdbc:mysql://localhost:3308
+  validationQuery: "SELECT 1"
