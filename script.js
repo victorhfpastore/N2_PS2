@@ -20,10 +20,10 @@ d3.json("https://brasil.io/api/dataset/covid19/obito_cartorio/data?state=SP",
     var	parseDate = d3.timeParse("%Y-%m-%d");
     data = data.results.map(function(d) {
       d.date = parseDate(d.date);
-      let newData = rs.results {{
+      let newData = {
         date: d.date,
         value: d.deaths_covid19 // Mude aqui o campo do json
-      }}
+      }
       return newData;
     });
   
